@@ -1,0 +1,139 @@
+{
+  "cards": [
+    {
+      "cardNo": "RC-2026-0901",
+      "title": "A320 发动机滑油系统例行检查",
+      "aircraft": "A320-214",
+      "trade": "机械",
+      "type": "routine",
+      "plannedFinish": "2026-09-22T18:00:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "接收工卡，确认飞机站位并设置挡轮、挂出禁止靠近标牌", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "打开发动机下部滑油接近盖板，检查盖板与锁扣状态", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "检查滑油箱外观及管路接头有无渗漏痕迹", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 4, "content": "测量滑油消耗量并记录，与上一航段数据比对", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [3] },
+        { "stepNo": 5, "content": "补充同牌号滑油至规定刻度线", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-OIL-2380", "name": "MIL-PRF-23699 滑油", "qty": 2 }], "dependsOn": [4] },
+        { "stepNo": 6, "content": "更换滑油系统磁性堵头封圈并检查吸附金属屑情况", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-SEAL-771", "name": "磁性堵头封圈", "qty": 1 }], "dependsOn": [4] },
+        { "stepNo": 7, "content": "更换滑油滤堵头密封垫圈", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-WASHER-12", "name": "堵头密封垫圈", "qty": 1 }], "dependsOn": [6] },
+        { "stepNo": 8, "content": "复装接近盖板并确认锁扣到位", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [5, 7] },
+        { "stepNo": 9, "content": "执行滑油系统通电自检，确认无相关警告信息", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [8] },
+        { "stepNo": 10, "content": "清理工作现场，核对工具数量并归还", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [9] },
+        { "stepNo": 11, "content": "签署工卡执行结论，双人复核各步骤签署完整性", "trade": "机械", "requiresDual": true, "materials": [], "dependsOn": [10] },
+        { "stepNo": 12, "content": "签署工卡，授权飞机恢复可用状态", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [11] }
+      ]
+    },
+    {
+      "cardNo": "RC-2026-0902",
+      "title": "B737-800 电子设备舱及大气数据系统例行检查",
+      "aircraft": "B737-800",
+      "trade": "电子",
+      "type": "routine",
+      "plannedFinish": "2026-09-23T16:30:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "断电挂牌，确认电子设备舱通风正常", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "目检大气数据模块（ADM）支架与插头防松保险", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "检查全静压管路走向、卡箍及有无磨损", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 4, "content": "清洁全压管路排水口，确认无堵塞", "trade": "电子", "requiresDual": false, "materials": [{ "code": "MAT-CLEAN-01", "name": "电子接点清洁剂", "qty": 1 }], "dependsOn": [3] },
+        { "stepNo": 5, "content": "使用全静压测试仪进行管路气密试验，保压 10 分钟", "trade": "电子", "requiresDual": true, "materials": [], "dependsOn": [4] },
+        { "stepNo": 6, "content": "记录气密试验压降数据并判读是否在允许范围", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [5] },
+        { "stepNo": 7, "content": "检查空速管加温功能及加温电流", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [6] },
+        { "stepNo": 8, "content": "检查迎角传感器加温与转动是否灵活", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [6] },
+        { "stepNo": 9, "content": "恢复供电，调取大气数据系统 BITE 历史故障", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [7, 8] },
+        { "stepNo": 10, "content": "在 CDU 上核对空速、高度指示一致性", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [9] },
+        { "stepNo": 11, "content": "恢复设备舱盖板，清点工具并撤离", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [10] },
+        { "stepNo": 12, "content": "双人复核测试数据并签署执行结论", "trade": "电子", "requiresDual": true, "materials": [], "dependsOn": [11] },
+        { "stepNo": 13, "content": "签署工卡，授权系统恢复使用", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [12] }
+      ]
+    },
+    {
+      "cardNo": "TR-2026-1107",
+      "title": "A320 左发引气压力摆动排故",
+      "aircraft": "A320-214",
+      "trade": "机械",
+      "type": "troubleshooting",
+      "plannedFinish": "2026-09-23T20:00:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "查阅 CMS 引气系统故障历史与航后报告，确认故障现象", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "地面试车复核引气压力在各引气构型下的摆动量", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "检查引气系统管路接头与卡箍有无漏气", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 4, "content": "测量压力调节活门（PRV）控制管路压力", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [3] },
+        { "stepNo": 5, "content": "（可选）拆检 PRV 滤杯并清洁，视情决定是否执行", "trade": "机械", "requiresDual": false, "skippable": true, "materials": [{ "code": "MAT-CLEAN-01", "name": "电子接点清洁剂", "qty": 1 }], "dependsOn": [4] },
+        { "stepNo": 6, "content": "更换压力调节活门（PRV）并完成力矩紧固", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-PRV-320", "name": "压力调节活门 PRV", "qty": 1 }], "dependsOn": [4, 5] },
+        { "stepNo": 7, "content": "（可选）更换 BAR 调节拉杆密封圈，视检查情况决定", "trade": "机械", "requiresDual": false, "skippable": true, "materials": [{ "code": "MAT-SEAL-771", "name": "磁性堵头封圈", "qty": 1 }], "dependsOn": [6] },
+        { "stepNo": 8, "content": "对相关管路做引气系统渗漏测试", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [6, 7] },
+        { "stepNo": 9, "content": "试车验证引气压力稳定，记录各引气构型参数", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [8] },
+        { "stepNo": 10, "content": "清除 CMS 故障信息并确认无重现", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [9] },
+        { "stepNo": 11, "content": "整理排故记录，双人复核数据并签署执行结论", "trade": "机械", "requiresDual": true, "materials": [], "dependsOn": [10] },
+        { "stepNo": 12, "content": "签署工卡，授权飞机放行", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [11] }
+      ]
+    }
+    ,
+    {
+      "cardNo": "RC-2026-0904",
+      "title": "A330 后货舱门框裂纹检查与修理",
+      "aircraft": "A330-300",
+      "trade": "结构",
+      "type": "routine",
+      "plannedFinish": "2026-09-25T18:00:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "查阅结构修理手册相关章节，确认检查区域与工艺", "trade": "结构", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "拆除门框内衬板与接近盖板", "trade": "结构", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "对门框高应力区做表面清洁与除漆", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-CLEAN-01", "name": "电子接点清洁剂", "qty": 2 }], "dependsOn": [2] },
+        { "stepNo": 4, "content": "渗透检查（PT）确认可疑裂纹长度与走向", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-NDT-KIT", "name": "渗透检测耗材包", "qty": 1 }], "dependsOn": [3] },
+        { "stepNo": 5, "content": "对裂纹区域执行涡流/超声无损检测并记录", "trade": "无损", "requiresDual": false, "materials": [], "dependsOn": [4] },
+        { "stepNo": 6, "content": "按 SRM 对裂纹端头钻止裂孔并测量孔径", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-DRILL-32", "name": "止裂孔钻头", "qty": 1 }], "dependsOn": [5] },
+        { "stepNo": 7, "content": "制配加强补片并试装定位", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-PATCH-AL", "name": "铝合金补片", "qty": 1 }], "dependsOn": [6] },
+        { "stepNo": 8, "content": "补片铆接，执行力矩与埋头深度检查", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-RIVET-4", "name": "4mm 铆钉", "qty": 12 }], "dependsOn": [7] },
+        { "stepNo": 9, "content": "修理后无损检测，确认无新增缺陷", "trade": "无损", "requiresDual": false, "materials": [], "dependsOn": [8] },
+        { "stepNo": 10, "content": "防腐处理并补漆恢复表面", "trade": "结构", "requiresDual": false, "materials": [{ "code": "MAT-PAINT-A330", "name": "A330 门框修补漆", "qty": 1 }], "dependsOn": [9] },
+        { "stepNo": 11, "content": "复装内衬板与接近盖板", "trade": "结构", "requiresDual": false, "materials": [], "dependsOn": [10] },
+        { "stepNo": 12, "content": "双人复核修理尺寸与检测记录，签署执行结论", "trade": "结构", "requiresDual": true, "materials": [], "dependsOn": [11] },
+        { "stepNo": 13, "content": "签署工卡，授权结构恢复使用", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [12] }
+      ]
+    },
+    {
+      "cardNo": "TR-2026-1112",
+      "title": "B737-800 前起落架转弯异响排故",
+      "aircraft": "B737-800",
+      "trade": "机械",
+      "type": "troubleshooting",
+      "plannedFinish": "2026-09-24T17:00:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "机组访谈与故障再现，确认转弯异响出现条件", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "顶起飞机，检查转弯作动筒及连杆连接点", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "检查转弯控制阀回油滤有无金属屑", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 4, "content": "测量转弯系统液压压力并与手册值比对", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [3] },
+        { "stepNo": 5, "content": "（可选）更换转弯作动筒端关节轴承，视磨损量决定", "trade": "机械", "requiresDual": false, "skippable": true, "materials": [{ "code": "MAT-BEARING-NLG", "name": "前起转弯关节轴承", "qty": 2 }], "dependsOn": [4] },
+        { "stepNo": 6, "content": "检查转弯减摆器油液与阻尼是否正常", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-OIL-HYD", "name": "MIL-H-5606 液压油", "qty": 1 }], "dependsOn": [4] },
+        { "stepNo": 7, "content": "更换磨损的转弯限位摩擦片并调整间隙", "trade": "机械", "requiresDual": false, "materials": [{ "code": "MAT-CLUTCH-NLG", "name": "转弯限位摩擦片", "qty": 1 }, { "code": "MAT-PIN-SHEAR", "name": "安全销（剪销）", "qty": 2 }], "dependsOn": [5, 6] },
+        { "stepNo": 8, "content": "地面操作前轮转弯系统做全行程循环检查", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [7] },
+        { "stepNo": 9, "content": "滑行验证转弯无异响，记录左右最大角度", "trade": "机械", "requiresDual": false, "materials": [], "dependsOn": [8] },
+        { "stepNo": 10, "content": "（可选）更换转弯位置反馈传感器，视排故结论决定", "trade": "电子", "requiresDual": false, "skippable": true, "materials": [{ "code": "MAT-SENSOR-NWS", "name": "转弯位置反馈传感器", "qty": 1 }], "dependsOn": [8] },
+        { "stepNo": 11, "content": "双人复核排故过程与参数，签署执行结论", "trade": "机械", "requiresDual": true, "materials": [], "dependsOn": [9, 10] },
+        { "stepNo": 12, "content": "签署工卡，授权飞机放行", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [11] }
+      ]
+    },
+    {
+      "cardNo": "RC-2026-0906",
+      "title": "A320 大气数据校准与空速一致性检查",
+      "aircraft": "A320-214",
+      "trade": "电子",
+      "type": "routine",
+      "plannedFinish": "2026-09-22T23:00:00+08:00",
+      "steps": [
+        { "stepNo": 1, "content": "确认飞机处于水平校装姿态，记录环境温度与气压", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [] },
+        { "stepNo": 2, "content": "连接全静压试验器至左右系统测试口", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [1] },
+        { "stepNo": 3, "content": "对左系统施加校准空速点，记录 PFD 指示偏差", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 4, "content": "对右系统施加校准空速点，记录 PFD 指示偏差", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [2] },
+        { "stepNo": 5, "content": "施加校准高度点，记录左右高度表与备用高度表偏差", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [3, 4] },
+        { "stepNo": 6, "content": "检查空速管、静压孔加温连续性并记录电阻", "trade": "电子", "requiresDual": false, "materials": [{ "code": "MAT-CLEAN-01", "name": "电子接点清洁剂", "qty": 1 }], "dependsOn": [5] },
+        { "stepNo": 7, "content": "对 ADR 1/2/3 输出做交叉一致性比对", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [5] },
+        { "stepNo": 8, "content": "恢复管路连接并做全静压系统渗漏复检", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [6, 7] },
+        { "stepNo": 9, "content": "整理校准数据，标注各校准点偏差值", "trade": "电子", "requiresDual": false, "materials": [{ "code": "MAT-TIE-WRAP", "name": "扎带", "qty": 5 }], "dependsOn": [8] },
+        { "stepNo": 10, "content": "拆除试验设备并恢复接近盖板", "trade": "电子", "requiresDual": false, "materials": [], "dependsOn": [8] },
+        { "stepNo": 11, "content": "双人复核校准证书与数据，签署执行结论", "trade": "电子", "requiresDual": true, "materials": [], "dependsOn": [9, 10] },
+        { "stepNo": 12, "content": "签署工卡，授权系统恢复使用", "trade": "放行", "requiresDual": false, "materials": [], "dependsOn": [11] }
+      ]
+    }
+  ]
+}

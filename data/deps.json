@@ -1,0 +1,162 @@
+{
+  "_comment": "dependencies 为步骤先后依赖的权威清单（与 cards.json 中各步骤 dependsOn 一致，服务启动时校验）；retains 为保留项台账；inventory 为库房台账。",
+  "dependencies": [
+    { "cardNo": "RC-2026-0901", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [3] },
+      { "step": 5, "dependsOn": [4] },
+      { "step": 6, "dependsOn": [4] },
+      { "step": 7, "dependsOn": [6] },
+      { "step": 8, "dependsOn": [5, 7] },
+      { "step": 9, "dependsOn": [8] },
+      { "step": 10, "dependsOn": [9] },
+      { "step": 11, "dependsOn": [10] },
+      { "step": 12, "dependsOn": [11] }
+    ]},
+    { "cardNo": "RC-2026-0902", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [3] },
+      { "step": 5, "dependsOn": [4] },
+      { "step": 6, "dependsOn": [5] },
+      { "step": 7, "dependsOn": [6] },
+      { "step": 8, "dependsOn": [6] },
+      { "step": 9, "dependsOn": [7, 8] },
+      { "step": 10, "dependsOn": [9] },
+      { "step": 11, "dependsOn": [10] },
+      { "step": 12, "dependsOn": [11] },
+      { "step": 13, "dependsOn": [12] }
+    ]},
+    { "cardNo": "TR-2026-1107", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [3] },
+      { "step": 5, "dependsOn": [4] },
+      { "step": 6, "dependsOn": [4, 5] },
+      { "step": 7, "dependsOn": [6] },
+      { "step": 8, "dependsOn": [6, 7] },
+      { "step": 9, "dependsOn": [8] },
+      { "step": 10, "dependsOn": [9] },
+      { "step": 11, "dependsOn": [10] },
+      { "step": 12, "dependsOn": [11] }
+    ]},
+    { "cardNo": "RC-2026-0904", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [3] },
+      { "step": 5, "dependsOn": [4] },
+      { "step": 6, "dependsOn": [5] },
+      { "step": 7, "dependsOn": [6] },
+      { "step": 8, "dependsOn": [7] },
+      { "step": 9, "dependsOn": [8] },
+      { "step": 10, "dependsOn": [9] },
+      { "step": 11, "dependsOn": [10] },
+      { "step": 12, "dependsOn": [11] },
+      { "step": 13, "dependsOn": [12] }
+    ]},
+    { "cardNo": "TR-2026-1112", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [3] },
+      { "step": 5, "dependsOn": [4] },
+      { "step": 6, "dependsOn": [4] },
+      { "step": 7, "dependsOn": [5, 6] },
+      { "step": 8, "dependsOn": [7] },
+      { "step": 9, "dependsOn": [8] },
+      { "step": 10, "dependsOn": [8] },
+      { "step": 11, "dependsOn": [9, 10] },
+      { "step": 12, "dependsOn": [11] }
+    ]},
+    { "cardNo": "RC-2026-0906", "edges": [
+      { "step": 2, "dependsOn": [1] },
+      { "step": 3, "dependsOn": [2] },
+      { "step": 4, "dependsOn": [2] },
+      { "step": 5, "dependsOn": [3, 4] },
+      { "step": 6, "dependsOn": [5] },
+      { "step": 7, "dependsOn": [5] },
+      { "step": 8, "dependsOn": [6, 7] },
+      { "step": 9, "dependsOn": [8] },
+      { "step": 10, "dependsOn": [8] },
+      { "step": 11, "dependsOn": [9, 10] },
+      { "step": 12, "dependsOn": [11] }
+    ]}
+  ],
+  "retains": [
+    {
+      "id": "RT-PART-001",
+      "cardNo": "TR-2026-1107",
+      "stepNo": 6,
+      "kind": "part",
+      "title": "压力调节活门（PRV）缺件待料",
+      "detail": "库房 PRV 库存为 0，已向器材部门提报紧急订货，件到前第 6 步不得签署。",
+      "materialCode": "MAT-PRV-320",
+      "status": "open",
+      "openedAt": "2026-09-21T09:20:00+08:00",
+      "eta": "2026-09-23T12:00:00+08:00"
+    },
+    {
+      "id": "RT-REV-002",
+      "cardNo": "RC-2026-0902",
+      "stepNo": null,
+      "kind": "review",
+      "title": "全静压系统气密试验到期复查",
+      "detail": "按维修方案该系统每 24 个月需到期复查；复查日期已过（昨天到期），超期期间整份工卡不许报完工。",
+      "dueDate": "2026-09-21",
+      "status": "open",
+      "openedAt": "2026-09-20T15:00:00+08:00"
+    },
+    {
+      "id": "RT-REV-003",
+      "cardNo": "RC-2026-0906",
+      "stepNo": null,
+      "kind": "review",
+      "title": "大气数据校准结果 30 天到期复查",
+      "detail": "本次校准后需在到期日当天完成复查确认；今天到期，复查完成前严格口径下不允许完工。",
+      "dueDate": "2026-09-22",
+      "status": "open",
+      "openedAt": "2026-08-23T10:00:00+08:00"
+    },
+    {
+      "id": "RT-PART-004",
+      "cardNo": "TR-2026-1112",
+      "stepNo": 7,
+      "kind": "part",
+      "title": "转弯限位安全销（剪销）缺件待料",
+      "detail": "剪销库存不足，件到前第 7 步（更换摩擦片）不得签署放行。",
+      "materialCode": "MAT-PIN-SHEAR",
+      "status": "open",
+      "openedAt": "2026-09-22T08:10:00+08:00",
+      "eta": "2026-09-24T09:00:00+08:00"
+    },
+    {
+      "id": "RT-REV-005",
+      "cardNo": "RC-2026-0901",
+      "stepNo": null,
+      "kind": "review",
+      "title": "滑油消耗量趋势 14 天到期复查",
+      "detail": "复查日期在 10 月上旬，当前在期内；用于演示“在期复查保留项不影响严格放行”。",
+      "dueDate": "2026-10-06",
+      "status": "open",
+      "openedAt": "2026-09-22T11:00:00+08:00"
+    }
+  ],
+  "inventory": [
+    { "code": "MAT-OIL-2380", "name": "MIL-PRF-23699 滑油", "unit": "升", "qty": 40 },
+    { "code": "MAT-SEAL-771", "name": "磁性堵头封圈", "unit": "个", "qty": 8 },
+    { "code": "MAT-WASHER-12", "name": "堵头密封垫圈", "unit": "个", "qty": 25 },
+    { "code": "MAT-CLEAN-01", "name": "电子接点清洁剂", "unit": "瓶", "qty": 6 },
+    { "code": "MAT-PRV-320", "name": "压力调节活门 PRV", "unit": "件", "qty": 0 },
+    { "code": "MAT-NDT-KIT", "name": "渗透检测耗材包", "unit": "套", "qty": 3 },
+    { "code": "MAT-DRILL-32", "name": "止裂孔钻头", "unit": "支", "qty": 5 },
+    { "code": "MAT-PATCH-AL", "name": "铝合金补片", "unit": "块", "qty": 4 },
+    { "code": "MAT-RIVET-4", "name": "4mm 铆钉", "unit": "个", "qty": 200 },
+    { "code": "MAT-PAINT-A330", "name": "A330 门框修补漆", "unit": "套", "qty": 2 },
+    { "code": "MAT-BEARING-NLG", "name": "前起转弯关节轴承", "unit": "个", "qty": 6 },
+    { "code": "MAT-OIL-HYD", "name": "MIL-H-5606 液压油", "unit": "升", "qty": 12 },
+    { "code": "MAT-CLUTCH-NLG", "name": "转弯限位摩擦片", "unit": "片", "qty": 2 },
+    { "code": "MAT-PIN-SHEAR", "name": "安全销（剪销）", "unit": "个", "qty": 0 },
+    { "code": "MAT-SENSOR-NWS", "name": "转弯位置反馈传感器", "unit": "件", "qty": 2 },
+    { "code": "MAT-TIE-WRAP", "name": "扎带", "unit": "根", "qty": 3 }
+  ]
+}

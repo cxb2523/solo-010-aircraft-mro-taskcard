@@ -1,0 +1,70 @@
+{
+  "_comment": "trades 为工种代码；staff.qualifications 为该人员持有的有效资质条目，certExpires 为证件到期日，到期当日仍有效、次日起拒绝。",
+  "trades": [
+    { "code": "机械", "name": "机械专业" },
+    { "code": "电子", "name": "电子（航电）专业" },
+    { "code": "结构", "name": "结构（钣金/铆接）专业" },
+    { "code": "无损", "name": "无损检测专业（PT/ET/UT）" },
+    { "code": "放行", "name": "整机放行授权" }
+  ],
+  "staff": [
+    {
+      "staffId": "S001", "name": "王建国", "team": "机械一组",
+      "qualifications": [
+        { "trade": "机械", "certNo": "MECH-A-0312", "certExpires": "2027-05-30" },
+        { "trade": "放行", "certNo": "CERT-7781", "certExpires": "2027-03-15" }
+      ]
+    },
+    {
+      "staffId": "S002", "name": "李伟", "team": "机械一组",
+      "qualifications": [
+        { "trade": "机械", "certNo": "MECH-A-0447", "certExpires": "2026-12-01" }
+      ]
+    },
+    {
+      "staffId": "S003", "name": "赵强", "team": "机械二组",
+      "qualifications": [
+        { "trade": "机械", "certNo": "MECH-B-0205", "certExpires": "2027-08-20" }
+      ]
+    },
+    {
+      "staffId": "S004", "name": "陈晓敏", "team": "电子一组",
+      "qualifications": [
+        { "trade": "电子", "certNo": "AVI-2210", "certExpires": "2027-06-10" },
+        { "trade": "放行", "certNo": "CERT-8012", "certExpires": "2026-11-30" }
+      ]
+    },
+    {
+      "staffId": "S005", "name": "刘洋", "team": "电子一组",
+      "qualifications": [
+        { "trade": "电子", "certNo": "AVI-2331", "certExpires": "2026-09-23" }
+      ]
+    },
+    {
+      "staffId": "S006", "name": "孙磊", "team": "电子二组",
+      "qualifications": [
+        { "trade": "电子", "certNo": "AVI-2408", "certExpires": "2027-01-25" }
+      ]
+    },
+    {
+      "staffId": "S007", "name": "周铁", "team": "结构车间",
+      "qualifications": [
+        { "trade": "结构", "certNo": "STR-1120", "certExpires": "2027-04-05" },
+        { "trade": "放行", "certNo": "CERT-8150", "certExpires": "2027-02-28" }
+      ]
+    },
+    {
+      "staffId": "S008", "name": "吴芳", "team": "结构车间",
+      "qualifications": [
+        { "trade": "结构", "certNo": "STR-1198", "certExpires": "2026-10-18" }
+      ]
+    },
+    {
+      "staffId": "S009", "name": "郑工", "team": "计量检测中心",
+      "qualifications": [
+        { "trade": "无损", "certNo": "NDT-L2-0663", "certExpires": "2027-07-01" },
+        { "trade": "结构", "certNo": "STR-1302", "certExpires": "2027-07-01" }
+      ]
+    }
+  ]
+}
